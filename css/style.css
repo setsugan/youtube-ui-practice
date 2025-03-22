@@ -1,3 +1,13 @@
+@charset "UTF-8";
+
+/* 全体に「M PLUS 1」フォントを適用 */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400; /* デフォルトの太さを指定 */
+}
+
 header {
     display: flex;
     align-items: center;
@@ -101,6 +111,7 @@ article {
     width: 100%;
     flex-grow: 1;
     background: #000;
+    border-radius: 8px;
 }
 .video-title {
     padding: 8px 0;
@@ -109,4 +120,13 @@ hr {
     border: 0;
     border-top: 1px solid #000;
     margin: 20px 0;
+}
+.detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+}
+.detail .user {
+    margin-right: 10px;
 }
